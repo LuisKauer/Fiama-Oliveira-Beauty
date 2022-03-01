@@ -464,6 +464,7 @@ main {
 }
 #footer .social{
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 #footer .social ul li {
   width: 3rem;
