@@ -1,0 +1,235 @@
+@media all and (min-width: 992px) {
+  :root {
+    --height-header: 8rem;
+    --font-size-title: 2.25rem;
+    --font-size-subtitle: 1.8rem;    
+    --font-size-body: 1.6rem;  
+  }
+  main {
+    margin-top: calc(var(--height-header) + 4rem);
+  }
+  .section {
+    padding: 8rem 0;
+  }
+
+  /* Seção Cabeçalho 1200 */
+  #header nav.container {
+    height: var(--height-header);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+  }
+  #header .toggle {
+    display: none;
+  }
+  #header nav .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  #header nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+  #header nav ul li a.title {
+    font: 700 var(--font-size-body) var(--font-title);
+    color: var(--base-color);
+    -webkit-font-smoothing: antialiased;
+  }
+  #header nav ul li a.title.active,
+  #header.scroll nav ul li a.title.active {
+    font-weight: 400;
+    color: var(--base-color-alt);
+  }  
+  #header.scroll nav ul li a.title {
+    color: var(--body-color);
+  }
+  #header a.logo img {
+    -webkit-font-smoothing: antialiased;
+    filter: brightness(95%);
+    filter: contrast(105%);
+    filter: saturate(200%);
+    gap: 0;
+    margin-top: 0.4rem;
+    width: 70%;
+  }
+  
+  /* Seção Home 1200 */
+  #home div.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+    grid-auto-flow: column;
+    grid-template-columns: 45% 45%;    
+  }
+  #home .image {
+    order: 1;
+  }
+  #home .image::before {
+    width: 100%;
+    height: 85%;
+    top: -8%;
+    right: -16%;
+    
+  }
+  #home .image img {
+    position: relative;
+    width: 100%;
+    top: 8%;
+    left: 4%;
+  }
+  #home .text {
+    max-width: 30rem;
+    padding-right: 4rem;
+    order: 0;
+    position: relative;
+    top: 0%;    
+  }
+  #home .text h2, 
+  #home .text p {
+    margin-bottom: 1.0rem;
+    text-align: justify;  
+
+    }
+  /* Seção About 1200 */
+  #about div.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+    grid-template-columns: 45% 50%;
+  }
+  #about .image {
+    order: 1;
+    width: 100%;
+  }
+  #about .image::before {
+    width: 80%;
+    height: 55%;
+    left: 5%;
+    top: 14%;
+  }
+  #about .image img {
+    width: 100%;
+    left: 5%;
+    top: 25%;
+  }
+  #about .text {
+    position: relative;
+    left: 5%;
+    top: 3%;
+    order: 1;
+    width: 95%;
+    
+  }
+  #about .text h2{
+    text-align: left;
+  }
+  #about .text h3{
+    margin-right: 1.5rem;
+    text-align: right;
+  }
+
+
+  #about .text p {
+    text-indent: 1rem;
+    text-align: justify;
+    width: 95%;    
+  }
+/* Seção About 1200 */
+  #services .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+  }
+  #services .text {
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  #services .text h2 {    
+    margin-bottom: 1rem;
+  }
+  #services .text p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35rem;
+    text-align: center;
+    font-size: var(--font-size-subtitle);
+  }
+  #services .cards{
+    gap: 0.7rem;
+    grid-template-columns: 32.4% 33% 32.4%;
+  }
+  #services .card{
+    padding: 1.5rem 0.5rem;
+    margin: 0;
+  }
+
+  #testimonials .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  #testimonials h2 {
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+  }
+  #testimonials .swiper-pagination{
+    padding-top: 5rem;
+  }
+
+  #contact .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 40% 60%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #contact .grid {
+    gap: 2rem;
+  }
+  #contact .text {
+    text-align: left;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  #contact .text h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  #contact .text p {
+    text-align: justify;
+    max-width: 100%;
+  }
+  #contact .links {    
+    text-align: left;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  #footer .container {
+    align-items: center;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+  #footer .logo-footer{
+    margin-left: 1.5rem;  
+  }   
+  #footer .social ul li i {
+    color: var(--body-color);
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  #footer .social ul li a {
+    font-size: var(--font-size-body);
+    transition: 0.4s;
+  }
+  #footer p {
+    font-size: var(--font-size-body);
+  }
+}

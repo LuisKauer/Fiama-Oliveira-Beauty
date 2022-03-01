@@ -1,0 +1,231 @@
+
+@media all and (max-width: 991px) {
+  :root {
+    --height-header: 7rem;
+    --font-size-title: 2rem;
+    --font-size-subtitle: 1.75rem;    
+    --font-size-body: 1.55rem;  
+  }
+  main {
+    margin-top: calc(var(--height-header) + 4rem);
+  }
+  .section {
+    padding: 6rem 0;
+  }
+
+  /* Seção Cabeçalho 1200 */
+  #header nav.container {
+    height: var(--height-header);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+  }
+  #header .toggle {
+    display: none;
+  }
+  #header nav .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  #header nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+  #header nav ul li a.title {
+    font: 400 var(--font-size-body) var(--font-title);
+    color: var(--base-color);
+    -webkit-font-smoothing: antialiased;
+  }
+  #header nav ul li a.title.active,
+  #header.scroll nav ul li a.title.active {
+    font-weight: 400;
+    color: var(--base-color-alt);
+  }  
+  #header.scroll nav ul li a.title {
+    color: var(--body-color);
+  }
+  #header a img {
+    -webkit-font-smoothing: antialiased;
+    filter: brightness(95%);
+    filter: contrast(105%);
+    filter: saturate(200%);
+    gap: 0;
+    margin-top: 0.4rem;
+    width: 45%;
+  }
+  
+  /* Seção Home 1200 */
+  #home div.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+    grid-auto-flow: column;
+    grid-template-columns: 45% 45%;
+    
+  }
+  #home .image {
+    order: 1;
+  }
+  #home .image::before {
+    width: 100%;
+    height: 85%;
+    top: -8%;
+    right: 1.5rem;
+  }
+  #home .image img {
+    position: relative;
+    width: 100%;
+    top: 0%;
+    left: 4%;
+  }
+  #home .text {
+    max-width: 30rem;
+    padding-right: 4rem;
+    order: 0;
+    position: relative;
+    top: 10%;    
+  }
+  #home .text h2, 
+  #home .text p {
+    text-align: justify;  
+
+    }
+  /* Seção About 1200 */
+  #about div.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+    grid-template-columns: 45% 50%;
+  }
+  #about .image {
+    order: 1;
+    width: 100%;
+  }
+  #about .image::before {
+    width: 80%;
+    height: 55%;
+    left: 5%;
+    top: 4%;
+  }
+  #about .image img {
+    width: 100%;
+    left: 5%;
+    top: 13%;
+  }
+  #about .text {
+    position: relative;
+    left: 5%;
+    top: 3%;
+    order: 1;
+    width: 95%;
+    
+  }
+  #about .text h2 {
+    text-align: left;
+  }
+  #about .text p {
+    text-indent: 1rem;
+    text-align: justify;
+    width: 95%;
+    
+  }
+
+
+/* Seção About 1200 */
+  #services .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+  }
+  #services .text {
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  #services .text h2 {    
+    margin-bottom: 1rem;
+  }
+  #services .text p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 33rem;
+    text-align: center;
+    
+  }
+  #services p.subtitle {
+    font-size: var(--font-size-subtitle);
+  }
+  #services .cards{
+    grid-template-columns: 31.4% 31.3% 31.4%;
+  }
+  .card{
+    margin: 0;
+  }
+
+  #testimonials .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  #testimonials h2 {
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+  }
+  #testimonials .swiper-pagination{
+    padding-top: 5rem;
+  }
+
+  #contact .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 40% 45%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #contact .grip {
+    gap: 2rem;
+  }
+  #contact .text {
+    text-align: left;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  #contact .text h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  #contact .text p {
+    text-align: left;
+    max-width: 100%;
+  }
+  #contact .links {
+    
+    text-align: left;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  #footer .container {
+    align-items: center;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+  #footer .logo-footer{
+    margin-left: 1.5rem;  
+  }   
+  #footer .social ul  li i {
+    color: var(--body-color);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  #footer .social ul li a {
+    font-size: var(--font-size-logo);
+    transition: 0.4s;
+  }
+}
